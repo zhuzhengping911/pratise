@@ -43,7 +43,7 @@ public class FinalModify {
             //输出 FINAL_VALUE_CHOSE 修改前的值
             System.out.println("Before Modify：FINAL_VALUE_CHOSE = " + fieldFinalChose.get(privateClass));
             //修改私有常量
-            fieldFinal.set(fieldFinalChose,"ZZP");
+            fieldFinalChose.set(privateClass,"ZZP");
             //调用 finalField 的 getter 方法
             //输出 FINAL_VALUE_CHOSE 修改后的值
             System.out.println("After Modify：FINAL_VALUE_CHOSE = " + fieldFinalChose.get(privateClass));           //使用对象调用类的 getter 方法
@@ -59,7 +59,7 @@ public class FinalModify {
             //输出 FINAL_VALUE_MODIFY 修改前的值
             System.out.println("Before Modify：FINAL_VALUE_MODIFY = " + fieldFinalModify.get(privateClass));
             //修改私有常量
-            fieldFinal.set(fieldFinalModify,"ZZP");
+            fieldFinalModify.set(privateClass,"ZZP");
             //调用 finalField 的 getter 方法
             //输出 FINAL_VALUE_MODIFY 修改后的值
             System.out.println("After Modify：FINAL_VALUE_MODIFY = " + fieldFinalModify.get(privateClass));
