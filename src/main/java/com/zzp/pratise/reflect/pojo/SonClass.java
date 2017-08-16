@@ -4,7 +4,7 @@ package com.zzp.pratise.reflect.pojo;
  * Created by zhuzhengping
  * on 2017/8/16.
  */
-public class SonClass {
+public class SonClass extends FatherClass{
 
 
     private String mSonName;

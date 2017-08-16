@@ -15,7 +15,7 @@ public class PrintFields {
     public static void main(String[] args) {
         Class mClass = SonClass.class;
         //1.获取并输出类的名称
-        System.out.println(mClass.getName());
+        System.out.println("类的名称：" + mClass.getName());
         //2.1 获取所有 public 访问权限的变量
         Field[] fields = mClass.getFields();
         //2.2 获取所有本类声明的变量（不问访问权限
