@@ -30,6 +30,8 @@ public class FinalModify {
             //调用 finalField 的 getter 方法
             //输出 FINAL_VALUE 修改后的值
             System.out.println("After Modify：FINAL_VALUE = " + fieldFinal.get(privateClass));
+            // 获取值并输出
+            System.out.println("Actually Modify：FINAL_VALUE = " + privateClass.getFINAL_VALUE());
         }
         if(fieldFinalChose != null){
             fieldFinalChose.setAccessible(true);
@@ -40,8 +42,13 @@ public class FinalModify {
             fieldFinal.set(fieldFinalChose,"ZZP");
             //调用 finalField 的 getter 方法
             //输出 FINAL_VALUE_CHOSE 修改后的值
-            System.out.println("After Modify：FINAL_VALUE_CHOSE = " + fieldFinalChose.get(privateClass));
+            System.out.println("After Modify：FINAL_VALUE_CHOSE = " + fieldFinalChose.get(privateClass));           //使用对象调用类的 getter 方法
+            // 获取值并输出
+            System.out.println("Actually Modify：FINAL_VALUE_CHOSE = " + privateClass.getFINAL_VALUE_CHOSE());
         }
+
+        System.out.println("================");
+
         if(fieldFinalModify != null){
             fieldFinalModify.setAccessible(true);
             //调用 finalField 的 getter 方法
@@ -51,7 +58,10 @@ public class FinalModify {
             fieldFinal.set(fieldFinalModify,"ZZP");
             //调用 finalField 的 getter 方法
             //输出 FINAL_VALUE_MODIFY 修改后的值
-            System.out.println("After Modify：FINAL_VALUE_CHOSE = " + fieldFinalModify.get(privateClass));
+            System.out.println("After Modify：FINAL_VALUE_MODIFY = " + fieldFinalModify.get(privateClass));
+            //使用对象调用类的 getter 方法
+            // 获取值并输出
+            System.out.println("Actually Modify：FINAL_VALUE_MODIFY = " + privateClass.getFINAL_VALUE_MODIFY());
         }
     }
 }
