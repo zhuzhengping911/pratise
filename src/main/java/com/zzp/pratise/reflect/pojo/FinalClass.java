@@ -8,10 +8,13 @@ public class FinalClass {
 
     private final String FINAL_VALUE = "FINAL";
 
-    private final String FINAL_VALUE_MODIFY = "MODIFY";
+    private final String FINAL_VALUE_MODIFY;
 
-    private final String FINAL_VALUE_CHOSE = "CHOSE";
+    private final String FINAL_VALUE_CHOSE = null == null ? "CHOSE" : null;
 
+    public FinalClass() {
+        this.FINAL_VALUE_MODIFY = "MODIFY";
+    }
 
     public String getFINAL_VALUE() {
         return FINAL_VALUE;
