@@ -35,6 +35,6 @@ public class DynmicProxyTest {
         String result = proxySubject.excute();
 
         System.out.println(result);
-        
+
     }
 }
