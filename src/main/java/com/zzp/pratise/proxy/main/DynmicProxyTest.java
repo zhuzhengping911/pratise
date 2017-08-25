@@ -10,7 +10,7 @@ import java.lang.reflect.Proxy;
 /**
  * Created by zhuzhengping
  * on 2017/8/18.
- *
+ * 无论是动态代理还是静态带领，都需要定义接口，然后才能实现代理功能。这同样存在局限性
  * 动态代理
  */
 public class DynmicProxyTest {
