@@ -1,7 +1,6 @@
 package com.zzp.pratise.proxy.proxy;
 
-import org.aopalliance.intercept.MethodInterceptor;
-import org.aopalliance.intercept.MethodInvocation;
+import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
@@ -10,7 +9,7 @@ import java.lang.reflect.Method;
  * Created by zhengping.zhu
  * on 2017/8/25.
  */
-public class CGLibProxy implements org.springframework.cglib.proxy.MethodInterceptor {
+public class CGLibProxy implements MethodInterceptor {
 
 
     @Override

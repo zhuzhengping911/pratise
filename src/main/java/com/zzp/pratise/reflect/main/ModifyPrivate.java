@@ -15,7 +15,7 @@ public class ModifyPrivate {
 
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, NoSuchFieldException {
         //1. 获取 Class 类实例
-        
+
         PrivateClass privateClass = new PrivateClass();
         Class mClass = PrivateClass.class;
 
