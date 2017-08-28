@@ -68,4 +68,17 @@ public class MyMap<K,V> {
     public int size(){
         return size;
     }
+
+    public V get(int index){
+        if(index >= nodes.length){
+            return (V) "out of index!!!";
+        }
+        if(index != -1 ){
+            if (nodes[index] == null){
+                return (V) new NullPointerException();
+            }
+            return (V) nodes[index].value;
+        }
+        return null;
+    }
 }
