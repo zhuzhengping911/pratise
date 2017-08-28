@@ -14,7 +14,7 @@ public class CGLibProxy implements MethodInterceptor {
 
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-        
+
         System.out.println("MethodInterceptor start...");
 
         Object result = methodProxy.invokeSuper(o,objects);
