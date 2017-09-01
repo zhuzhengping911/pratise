@@ -28,6 +28,7 @@ public class MyMap<K,V> {
 
 //    放入元素，如果元素key已经存在，覆盖value，否则在数组中添加key，value的信息
     public void put(K key,V value){
+        
         if(nodes == null){
 //            如果数组为空，创建大小为10的数组
             nodes = new Node[10];
