@@ -21,7 +21,7 @@ public class DynmicProxyTest {
      * @param args
      */
     public static void main(String[] args) {
-
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles","true");
         Target target = new TargetImpl();
 
         DynamicProxyHandler handler = new DynamicProxyHandler(target);
