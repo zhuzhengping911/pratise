@@ -27,6 +27,7 @@ public class ResizeArray {
     }
     // Test routine for resizeArray().
     public static void main (String[] args) {
+
         int[] a = {1,2,3};
         a = (int[])resizeArray(a,5);
         a[3] = 4;
