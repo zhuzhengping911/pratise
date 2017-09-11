@@ -16,6 +16,7 @@ public class ResizeArray {
      * @return          A new array with the same contents.
      */
     private static Object resizeArray (Object oldArray, int newSize) {
+
         int oldSize = java.lang.reflect.Array.getLength(oldArray);
         Class elementType = oldArray.getClass().getComponentType();
         Object newArray = java.lang.reflect.Array.newInstance(
