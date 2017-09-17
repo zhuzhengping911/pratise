@@ -40,7 +40,9 @@ public class XMLParser {
 
 
     public void getAllUserNames(String fileName) {
+
         try {
+            
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbf.newDocumentBuilder();
             File file = new File(fileName);
