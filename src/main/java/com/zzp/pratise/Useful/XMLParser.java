@@ -46,7 +46,7 @@ public class XMLParser {
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
             DocumentBuilder db = dbf.newDocumentBuilder();
-            
+
             File file = new File(fileName);
             if (file.exists()) {
                 Document doc = db.parse(file);
