@@ -74,6 +74,7 @@ public class XMLParser {
 
                             Element e = (Element) node;
                             NodeList nodeList = e.getElementsByTagName("name");
+                            
                             System.out.println("Name: "
                                     + nodeList.item(0).getChildNodes().item(0)
                                     .getNodeValue());
